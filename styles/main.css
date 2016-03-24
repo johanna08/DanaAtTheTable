@@ -1,0 +1,223 @@
+/* CURRENTLY IN: styles/main.css */
+
+/* NAV STYLES*/
+.mdl-layout-title--logo {
+	line-height: 64px;
+	padding-left: 0;
+  padding-top: 35px;
+}
+
+.social-badge {
+  height: 100px;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.social-badge--icon {
+  padding-bottom: 25px;
+}
+
+/*MAIN PAGE PIC*/
+.page-content--pic { 
+  background: url('../images/Food_Pngs/Cover_Shot.png') no-repeat center; 
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
+  width: 100%;
+  height: 100vh;
+}
+
+@media all and ( max-width: 768px ) {
+    .page-content--pic {
+      width: 100%;
+      display: block;
+    }
+}
+
+@media all and ( max-width: 768px ) and ( orientation: portrait) {
+    .page-content--pic {
+      background-size: 100% auto !important;
+    }
+}
+
+.trello-cms .page-content--pic{
+  background-image: none;
+  background-size: auto 90%;/*xy auto, background-size: contain;*/
+  height: 90vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container--center {
+  justify-content: space-around;
+  padding-bottom: 20px;
+
+}
+
+
+/*GALLERY VIEW STYLES*/
+.gallery-view {
+  display: none;
+  flex-wrap: wrap;
+  
+}
+
+@media all and ( max-width: 768px ) and ( orientation: portrait) {
+    .gallery-view {
+      background-size: 100% auto !important;
+    }
+}
+
+.demo-card-image.mdl-card {
+  width: 22.5%;
+  height: 22.5%;
+  background: url('../assets/demos/image_card.jpg') center / cover;
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+/*HIDING TITLE*/
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media all and ( max-width: 768px ) and ( orientation: portrait) {
+    .demo-card-image.mdl-card {
+      width: 75%;
+      margin-left: 50px;
+    }
+}
+
+/*VIDEO REEL STYLES*/
+.page-content--reel { 
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media all and ( max-width: 768px ) and ( orientation: portrait) {
+    .page-content--reel {
+      width: 100%;
+      display: block;
+    }
+}
+/*video {
+  width: 1000px;
+  height: 600px;
+}
+
+@media all and ( max-width: 1024px ) {
+  video {
+    width: 100%;
+    height: 90vh;
+    display: block;
+  }
+}
+
+@media all and ( max-width: 768px ) and ( orientation: portrait) {
+    video {
+      width: 45vh  !important;
+      height: 90vh  !important;
+      display: block;
+    }
+}*/
+
+/* ABOUT PAGE STYLES*/
+.page-content--about {
+	display: flex nowrap;
+	justify-content: center;
+	padding: 50px;
+}
+
+.page-content--aboutpic {
+  background: url('../images/Food_Pngs/Cocktails_People.png') no-repeat center; 
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
+  width: 100%;
+  height: 80vh;
+}
+
+/*@media all and ( max-width: 600px ) {
+    .page-content--aboutpic {
+      width: 100%;
+      display: block;
+    }
+}
+*/
+@media all and ( max-width: 768px ) and ( orientation: portrait ) {
+    .page-content--aboutpic {
+      background-size: 100% auto !important ;
+    }
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER FONTS*/
+.fontchange {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.fontchange--nav {
+  font-size: 18px;
+}
+
+/*VIDEOS PAGE STYLES*/
+.videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*FOOTER STYLES*/
+.fontchange__footer {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+
+@media all and (max-width: 768px ) and ( orientation: portrait ) {
+    .map {
+      padding-top: 50px !important ;
+    }
+}
+
+@media all and (max-width: 1024px ) {
+  .map {
+    padding-top: 50px !important;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+/*ADDTL FONTS
+font-family: 'Open Sans', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'IM Fell French Canon', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+

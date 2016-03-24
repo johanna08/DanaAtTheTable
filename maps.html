@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,'>
+    <title >DanaAtTheTable</title>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-indigo.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='styles/main.css'>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+    </head>
+<body>
+
+    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title--logo"><a href="index.html"><img src="images/logo.png"></a></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link fontchange fontchange--nav" href="portfolioI.html">PORTFOLIO I</a>
+          <a class="mdl-navigation__link fontchange fontchange--nav" href="portfolioII.html">PORTFOLIO II</a>
+          <a class="mdl-navigation__link fontchange fontchange--nav" href="savoir-faire.html">SAVOIRE-FAIRE</a>
+          <a class="mdl-navigation__link fontchange fontchange--nav" href="maps.html">TABLES</a>
+          <a class="mdl-navigation__link fontchange fontchange--nav" href="contact.html">CONNECT</a>
+         
+          <div class="container social-badge">
+          <!--INSTAGRAM-->
+          <div class="social-badge--icon">
+          
+              <a href="https://www.instagram.com/danaatthetable" target="_blank"><img src="images/instagram-48.png" alt="Instagram" /></a>
+          </div>
+          <!--TWITTER-->
+              <div class="social-badge--icon"><a href="https://twitter.com/danaatthetable" target="_blank"><img src="images/twitter-48.png"></a>
+              </div>
+            </div>
+            <div class="container fontchange fontchange__footer">
+              <p>Dana At The Table © 2015 </p>
+            </div>
+          </nav>
+      </div>
+     
+      <div class="mdl-layout__content map">
+        <div class="page-content"></div>
+        <div class="container" style="height: 100%;">
+                    <div id="map" style="width: 100%; height: 100%;"></div>
+        </div>
+      </div>
+      </div>
+
+      <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'>
+    </script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+        <script type="text/javascript">
+
+	         var map;
+	         function initMap() {
+  	       map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 40.7375838, lng: -73.9865716},
+            zoom: 13
+ 	        });
+	       }
+
+        </script>
+      
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAaNdty4oeuuqJELPcw5XEgS_-bpR8NTs&callback=initMap" type="text/javascript">
+  	</script>
+  
+  </body>
+</html>
