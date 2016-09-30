@@ -24,8 +24,9 @@
   -webkit-background-size: 90%;
   -moz-background-size: 90%;
   -o-background-size: 90%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  padding-left: 240px;
 }
 
 @media all and ( max-width: 768px ) {
@@ -170,9 +171,10 @@ a {
 
 /*HEADER FONTS*/
 .fontchange {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 26px;
+  color: #686868;
 }
 
 .fontchange--nav {
